@@ -167,7 +167,7 @@ for epoch in range(1, epochs + 1):
 print("Training finished. Best avg RMSE:", best_val)
 
 # could use best_model.pt
-SAVED_MODEL_PATH = './tranied_model.pth' 
+SAVED_MODEL_PATH = './trained_model.pth' 
 torch.save(model.state_dict(), SAVED_MODEL_PATH)
 
 ckpt = torch.load(ckpt_path, map_location=device)
